@@ -46,11 +46,12 @@ public class ItemControllerTest {
 
 	@Test
 	public void createTest() {
+		String id = "1";
 		String name = "yasha";
 		String cost = "100";
-		Mockito.doReturn(cost, name).when(itemController).getInput();
-		Item item = new Item(100f, name);
-		Item savedItem = new Item(1L, 100f, name);
+		Mockito.doReturn(id, cost, name).when(itemController).getInput();
+		Item item = new Item(1l,100f, name);
+		Item savedItem = new Item(1l, 100f, name);
 		Mockito.when(itemServices.create(item)).thenReturn(savedItem);
 		assertEquals(savedItem, itemController.create());
 	}

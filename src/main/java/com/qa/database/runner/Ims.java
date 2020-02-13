@@ -5,9 +5,14 @@ import org.apache.log4j.Logger;
 import com.qa.database.controller.Action;
 import com.qa.database.controller.CrudController;
 import com.qa.database.controller.CustomerController;
+import com.qa.database.controller.ItemController;
 import com.qa.database.controller.OrderController;
 import com.qa.database.dao.MysqlCustomerDao;
+import com.qa.database.dao.MysqlItemDao;
+import com.qa.database.dao.MysqlOrderDao;
 import com.qa.database.services.CustomerServices;
+import com.qa.database.services.ItemServices;
+import com.qa.database.services.OrderServices;
 import com.qa.database.utils.Utils;
 import com.qa.databases.Domain;
 
@@ -36,10 +41,14 @@ public class Ims {
 			doAction(customerController, action);
 			break;
 		case ITEM:
+			ItemController itemController = new ItemController(new ItemServices(new MysqlItemDao()));
+			doAction(itemController, action);
 			break;
 		case ORDER:
-//			OrderController orderController = new OrderController(new OrderServices(new MysqlOrderDao()));
-//			doAction(orderController, action);
+
+			OrderController orderController = new OrderController(new OrderServices(new MysqlOrderDao()));
+			doAction(orderController, action);
+
 			break;
 		case STOP:
 			break;

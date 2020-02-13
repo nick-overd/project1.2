@@ -1,4 +1,4 @@
 /**
- * This package is used to take in a user inputs.
+ * This package is for services which provide logic to the application
  */
 package com.qa.database.services;

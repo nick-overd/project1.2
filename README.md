@@ -3,13 +3,7 @@ Inventory Management System
 Created a Inventory Management System which is able to create, read, update and delete information which is inputed within the system. We created a MySQL database that synced with Java Eclipse which allowed the database to be retrieved from MySQL
 Getting Started
 Firstly create a sql instance on google cloud. .Then pull the code to your eclipse using gitbash. Change the ip addresses of the MySQL database within java to there own databases ip
-Prerequisites
-Eclipse: https://www3.ntu.edu.sg/home/ehchua/programming/howto/EclipseJava_HowTo.html
-MySQL: https://dev.mysql.com/doc/mysql-installation-excerpt/8.0/en/windows-install-archive.html
-Google Cloud Platform: https://cloud.google.com/sql/docs/mysql/quickstart
-GitBash: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-Java: https://www3.ntu.edu.sg/home/ehchua/programming/howto/EclipseJava_HowTo.html
-Maven: https://howtodoinjava.com/maven/how-to-install-maven-on-windows/
+
 Installing
 Set up a google cloud instance
 Pull the repository from GitHub using the following commands using GitBash: git init git pull https://github.com/nick-overd/project1.2

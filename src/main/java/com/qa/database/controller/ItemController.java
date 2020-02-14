@@ -48,7 +48,7 @@ public class ItemController implements CrudController<Item>{
 		String name = getInput();
 		LOGGER.info("Please enter the id of the Item you would like to create");
 		Float cost = Float.valueOf(getInput());
-		Item item = itemService.create(new Item(cost ,name));
+		Item item = itemService.create(new Item( cost ,name));
 		LOGGER.info("Item created");
 		return item;
 	}
